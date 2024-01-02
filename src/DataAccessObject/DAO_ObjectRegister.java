@@ -21,10 +21,10 @@ import java.util.logging.Logger;
 public class DAO_ObjectRegister implements Listener_Register {
 
     Connection connection;
-    final String tambah = "INSERT INTO register(nama, username,password) VALUES (?,?,?);";
-    final String select = "SELECT * FROM register;";
-    final String cariusername = "SELECT * FROM register where username like ?";
-    final String delete = "DELETE FROM register where username=? ;";
+    String tambah = "INSERT INTO register(nama, username,password) VALUES (?,?,?);";
+    String select = "SELECT * FROM register;";
+    String cariusername = "SELECT * FROM register where username like ?";
+    String delete = "DELETE FROM register where username=? ;";
 
     public DAO_ObjectRegister() {
         this.connection = Koneksi_DB.connection();

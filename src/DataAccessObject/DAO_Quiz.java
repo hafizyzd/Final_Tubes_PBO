@@ -22,9 +22,8 @@ public class DAO_Quiz implements Listener_Quiz{
     
     Connection connection;
     
-    final String insert = "INSERT INTO table_quiz(matakuliah, soal, pilihan1, pilihan2, pilihan3, pilihan4,jawaban) VALUES(?,?,?,?,?,?,?);";
-    final String quizmk = "SELECT * FROM table_quiz where matakuliah like ?";
-    //final String insertmk = "INSERT INTO ? (soal, pilihan1, pilihan2, pilihan3, pilihan4,jawaban) VALUES(?,?,?,?,?,?);";
+    String insert = "INSERT INTO table_quiz(matakuliah, soal, pilihan1, pilihan2, pilihan3, pilihan4,jawaban) VALUES(?,?,?,?,?,?,?);";
+    String quizmk = "SELECT * FROM table_quiz where matakuliah like ?";
     
     public DAO_Quiz() {
         this.connection = Koneksi_DB.connection();

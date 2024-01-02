@@ -7,7 +7,6 @@ package DataAccessObject;
 
 import Controller.Koneksi_DB;
 import Model.Admin;
-import Model.Dosen;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -27,8 +26,8 @@ public class DAO_Admin implements Listener_Admin{
     
     Connection connection;
     
-    final String select = "SELECT * FROM admin;";
-    final String caripengguna = "SELECT * FROM admin where username like ? AND password like ?";
+    String select = "SELECT * FROM admin;";
+    String caripengguna = "SELECT * FROM admin where username like ? AND password like ?";
 
     public DAO_Admin() {
         this.connection = Koneksi_DB.connection();

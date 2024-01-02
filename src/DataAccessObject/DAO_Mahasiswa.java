@@ -21,20 +21,21 @@ import javax.swing.JOptionPane;
 public class DAO_Mahasiswa implements Listener_Mahasiswa{
     Connection connection;
     
-    final String update = "UPDATE table_mahasiswa set nama=?, username=?, email=?, role=? where nim=? ;";
-    final String delete = "DELETE FROM table_mahasiswa where nim=? ;";
-    final String select = "SELECT * FROM table_mahasiswa;";
-    final String carinama = "SELECT * FROM table_mahasiswa where nama like ?";
-    final String caripengguna = "SELECT * FROM table_mahasiswa where username like ? AND password like ?";
-    final String cariusername = "SELECT * FROM table_mahasiswa where username like ?";
-    final String carinim = "SELECT nim,nama,username,password FROM table_mahasiswa where nim like ?";
-    final String kodenim = "SELECT nim FROM table_mahasiswa where nim like ?";
-    final String submitnotif = "UPDATE table_mahasiswa set notif=? where nim=? ;";
-    final String tambah = "INSERT INTO table_mahasiswa(nim, nama, username,email, role) VALUES(?,?,?,?,?);";
-    final String tambahregis = "INSERT INTO table_mahasiswa(nim, nama, username,email, role,password) VALUES(?,?,?,?,?,?);";
-    final String updatenilaipbo = "UPDATE table_mahasiswa set nilai_pbo=? where username=? ;";
-    final String updatenilaibd = "UPDATE table_mahasiswa set nilai_bd=? where username=? ; ;";
-    final String updatenilaijre = "UPDATE table_mahasiswa set nilai_jre=? where username=? ; ;";
+     String update = "UPDATE table_mahasiswa set nama=?, username=?, email=?, role=? where nim=? ;";
+     String delete = "DELETE FROM table_mahasiswa where nim=? ;";
+     String select = "SELECT * FROM table_mahasiswa;";
+     String carinama = "SELECT * FROM table_mahasiswa where nama like ?";
+     String caripengguna = "SELECT * FROM table_mahasiswa where username like ? AND password like ?";
+     String cariusername = "SELECT * FROM table_mahasiswa where username like ?";
+     String carinim = "SELECT nim,nama,username,password FROM table_mahasiswa where nim like ?";
+     String kodenim = "SELECT nim FROM table_mahasiswa where nim like ?";
+     String submitnotif = "UPDATE table_mahasiswa set notif=? where nim=? ;";
+     String tambah = "INSERT INTO table_mahasiswa(nim, nama, username,email, role) VALUES(?,?,?,?,?);";
+     String tambahregis = "INSERT INTO table_mahasiswa(nim, nama, username,email, role,password) VALUES(?,?,?,?,?,?);";
+     String updatenilaipbo = "UPDATE table_mahasiswa set nilai_pbo=? where username=? ;";
+     String updatenilaibd = "UPDATE table_mahasiswa set nilai_bd=? where username=? ; ;";
+     String updatenilaijre = "UPDATE table_mahasiswa set nilai_jre=? where username=? ; ;";
+    
     
     
     public DAO_Mahasiswa() {

@@ -17,14 +17,14 @@ import DAOListener.Listener_Dosen;
 public class DAO_Dosen implements Listener_Dosen {
     
     Connection connection;
-    final String tambah = "INSERT INTO table_dosen(nip, nama, username,email, role) VALUES (?,?,?,?,?);";
-    final String tambahregis = "INSERT INTO table_dosen(nip, nama, username,email, role, password) VALUES (?,?,?,?,?,?);";
-    final String update = "UPDATE table_dosen set nama=?, username=?, email=?, role=? where nip=? ;";
-    final String delete = "DELETE FROM table_dosen where nip=? ;";
-    final String select = "SELECT * FROM table_dosen;";
-    final String carinama = "SELECT * FROM table_dosen where username like ?";
-    final String caripengguna = "SELECT * FROM table_dosen where username like ? AND password like ?";
-    final String carinip = "SELECT nip FROM table_dosen where nip like ?";
+    String tambah = "INSERT INTO table_dosen(nip, nama, username,email, role) VALUES (?,?,?,?,?);";
+    String tambahregis = "INSERT INTO table_dosen(nip, nama, username,email, role, password) VALUES (?,?,?,?,?,?);";
+    String update = "UPDATE table_dosen set nama=?, username=?, email=?, role=? where nip=? ;";
+    String delete = "DELETE FROM table_dosen where nip=? ;";
+    String select = "SELECT * FROM table_dosen;";
+    String carinama = "SELECT * FROM table_dosen where username like ?";
+    String caripengguna = "SELECT * FROM table_dosen where username like ? AND password like ?";
+    String carinip = "SELECT nip FROM table_dosen where nip like ?";
 
     public DAO_Dosen() {
         this.connection = Koneksi_DB.connection();
